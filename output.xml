@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on darwin)" generated="20201206 14:01:46.333" rpa="false">
+<suite id="s1" name="Read Csv" source="/Users/bukalapak/Documents/rf-tutorial/RFDemo/read_csv.robot">
+<test id="s1-t1" name="Reading a csv file">
+<kw name="Read Csv File" library="csv_library">
+<doc>This creates a keyword named "Read csv file".
+This keyword takes one argument, which is a path to a .csv file.
+It returns a list of rows, with each row being a list of the data in each column.</doc>
+<arguments>
+<arg>test.csv</arg>
+</arguments>
+<assign>
+<var>${data}</var>
+</assign>
+<msg timestamp="20201206 14:01:46.370" level="INFO">${data} = [['andi', 'buku', '6'], ['budi', 'pensil', '3'], ['charlie', 'penghapus', '2']]</msg>
+<status status="PASS" starttime="20201206 14:01:46.370" endtime="20201206 14:01:46.370"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20201206 14:01:46.371" level="INFO">[['andi', 'buku', '6'], ['budi', 'pensil', '3'], ['charlie', 'penghapus', '2']]</msg>
+<status status="PASS" starttime="20201206 14:01:46.371" endtime="20201206 14:01:46.371"></status>
+</kw>
+<status status="PASS" starttime="20201206 14:01:46.369" endtime="20201206 14:01:46.372" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201206 14:01:46.334" endtime="20201206 14:01:46.373"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Read Csv">Read Csv</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
